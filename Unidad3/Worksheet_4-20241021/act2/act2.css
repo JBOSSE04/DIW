@@ -1,0 +1,14 @@
+#first{
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    border-radius: 60%;
+    }
+#second{
+    border: 5px solid red;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+    }
+   

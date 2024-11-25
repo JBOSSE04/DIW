@@ -1,0 +1,36 @@
+ol, ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ol, ul {
+    margin-top: 50px;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif; 
+    color: darkred; 
+}
+
+ol, ul {
+    font-family: 'Verdana', sans-serif; 
+}
+
+.copia {
+    list-style-type: square;
+    background-color: lightgoldenrodyellow; 
+}
+
+.copia li {
+    background-color: lightgray; 
+}
+
+.copia2 {
+    list-style-image: url('ribbon.png');
+  
+}

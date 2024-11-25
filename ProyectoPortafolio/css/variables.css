@@ -1,0 +1,9 @@
+:root {
+    --color-primario: #6a11cb;
+    --color-secundario: #2575fc;
+    --color-claro: #f4f4f4;
+    --color-oscuro: #333;
+    --color-texto: #fff;
+    --fondo-forma: linear-gradient(135deg, #0003cc 50%, #6f00ff 50%);
+    --fuente-principal: 'Poppins', sans-serif;
+}

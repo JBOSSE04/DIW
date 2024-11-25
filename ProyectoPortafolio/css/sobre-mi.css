@@ -1,0 +1,23 @@
+#sobre-mi {
+    background: var(--color-oscuro);
+    color: var(--color-texto);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#sobre-mi h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#sobre-mi p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.sobre-mi-caja img {
+    width: 10vm;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}

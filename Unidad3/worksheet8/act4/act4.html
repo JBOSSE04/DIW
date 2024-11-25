@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Layout with Flexbox</title>
+<style>
+  /* Main container */
+  .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* Highlighted item (first one, full width) */
+  .news-item.featured {
+    flex: 1 1 100%;
+    border: 2px solid purple;
+    padding: 16px;
+  }
+
+  /* Regular news items (2 columns) */
+  .news-item {
+    flex: 1 1 calc(50% - 16px);
+    border: 2px solid lightgray;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Image styling */
+  .news-item img {
+    width: 100%;
+    height: auto;
+    background-color: #ddd; /* Placeholder color for image */
+  }
+
+  /* Title styling */
+  .news-item h2 {
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
+
+  /* Text styling */
+  .news-item p {
+    font-size: 0.9em;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="news-container">
+ 
+  <div class="news-item featured">
+    <img src="images.jpeg" alt="Featured News">
+    <h2>Featured Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nisi a purus euismod facilisis.</p>
+  </div>
+  
+   <div class="news-item">
+    <img src="images.jpeg" alt="News Image">
+    <h2>News Title 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula.</p>
+  </div>
+  <div class="news-item">
+    <img src="images.jpeg" alt="News Image">
+    <h2>News Title 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula.</p>
+  </div>
+  <div class="news-item">
+    <img src="images.jpeg" alt="News Image">
+    <h2>News Title 3</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula.</p>
+  </div>
+  <div class="news-item">
+    <img src="images.jpeg" alt="News Image">
+    <h2>News Title 4</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula.</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+    border:2px solid #333;
+    background-color: #ddd;
+    }
+    p{
+    font-size:2rem;
+    background-color: #888;
+    width:50%;
+    margin:2rem auto;
+    text-align: center;
+    padding: 0.5rem;
+    }
+    .borde{
+    border: 2px solid green;
+    background-clip: content-box;
+    }
+    .contorno{
+    outline: 2px solid green;
+    }
+    </style>
+    </head>
+    <body>
+    <div>
+    <p class="borde clip">borde</p>
+    <p class="contorno">contorno</p>
+    </div>
+    </body>
+</html> -->
+
+
+<!-- 
+¿El espacio que ocupa cada párrafo, aparentemente, es el mismo?
+
+    
+     pero al inspeccionar los estilos verás que el borde 
+     y el contorno se comportan de manera diferente.
+
+• Usa el inspector, ¿El espacio que ocupa cada párrafo, aparentemente, es el
+mismo? ¿Qué hay diferente?
+
+
+
+• Utiliza background-clip en el primer párrafo para que el fondo se extienda solo
+al contenido. Utiliza una nueva clase.
+
+
+
+• Añade la regla necesaria para que los párrafos ocupen el mismo espacio.
+
+
+
+• Modifica la regla para la clase borde y contorno. Queremos que sea adaptable,
+esto es, un borde o contorno más grueso en vistas desktop y más delgado en
+vista móvil
+
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificación de Bordes y Contornos</title>
+    <style>
+        div {
+            border: 2px solid #333;
+            background-color: #ddd;
+        }
+        p {
+            font-size: 2rem;
+            background-color: #888;
+            width: 50%;
+            margin: 2rem auto;
+            text-align: center;
+            padding: 0.5rem;
+        }
+        .borde {
+            border: 2px dotted green;
+        }
+        .contorno {
+            outline: 2px solid green;
+        }
+
+        .clip {
+            background-clip: content-box;
+        }
+
+        .borde, .contorno {
+            box-sizing: border-box;
+        }
+
+
+
+        
+        @media (min-width: 768px) {
+            .borde {
+                border-width: 4px; 
+            }
+            .contorno {
+                outline-width: 4px; 
+            }
+        }
+
+        @media (max-width: 767px) {
+            .borde {
+                border-width: 1px; 
+            }
+            .contorno {
+                outline-width: 1px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="borde clip">borde</p>
+        <p class="contorno">contorno</p>
+    </div>
+</body>
+</html>

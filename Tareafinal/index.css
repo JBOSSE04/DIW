@@ -1,0 +1,695 @@
+/* Variables////////////////////////////// */
+:root {
+    --color-primario: #6a11cb;
+    --color-secundario: #2575fc;
+    --color-claro: #f4f4f4;
+    --color-oscuro: #333;
+    --color-texto: #fff;
+    --fondo-forma: linear-gradient(135deg, #0003cc 50%, #6f00ff 50%);
+    --fuente-principal: 'Poppins', sans-serif;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    color: var(--color-oscuro);
+    scroll-behavior: smooth;
+}
+
+/* Header/////////////////////////////////////// */
+header {
+    background: var(--color-oscuro);
+
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--color-texto);
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--color-primario);
+}
+
+/* Menú Hamburguesa /////////////////////////////*/
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li {
+    margin: 0 15px;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+ul.menu li a:hover {
+    color: #f0a500;
+}
+
+/* Estilos para la hamburguesa */
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.hamburguesa .line {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+
+/*ham2*/
+
+.line1.rotate-down {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.line2.fade-out {
+    opacity: 0;
+}
+
+.line3.rotate-up {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hero */
+#hero {
+    background: linear-gradient(135deg, #6a11cb 0%,#f4f4f4 50%, #2575fc 100%);
+    color: var(--color-oscuro);
+    text-align: center;
+    padding: 10vh 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#hero a {
+    background: var(--color-secundario);
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    transition: background 0.3s;
+}
+
+#hero a:hover {
+    background: var(--color-primario);
+}
+#hero .perfil {
+    width: 350px; 
+    height: auto; 
+    border-radius: 30%; 
+    object-fit: cover; 
+    margin-bottom: 1.5rem; 
+}
+
+/* Mi Trabajo //////////////////////////////////////////////////////////////////////*/
+#mi-trabajo {
+    background: var(--color-claro);
+    padding: 5vh 10vw;
+    text-align: center;
+    
+}
+
+#mi-trabajo h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Sobre Mí */
+#sobre-mi {
+    background: var(--fondo-forma);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.sobre-mi-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-mi-caja {
+    background: var(--color-claro);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 900px;
+}
+
+.sobre-mi-caja img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Servicios////////////////////////////////////////////////////*/
+#servicios {
+    background: var(--color-claro);
+    padding: 5vh 10vw;
+    text-align: center;
+}
+
+.card {
+    background: var(--color-texto);
+    color: var(--color-oscuro);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-2rem);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/*
+
+*/
+
+/*Habilidades//////////////////////////////////*/
+#habilidades {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#habilidades h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Contenedor de cada habilidad */
+.habilidad {
+    margin-bottom: 25px;
+    text-align: left;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.habilidad p {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilos para la barra de progreso */
+.barra {
+    background-color: #ddd;
+    border-radius: 20px;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.barra::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 1s ease-in-out;
+    border-radius: 20px;
+}
+
+/* Estilo hover para animación adicional */
+.barra:hover::before {
+    background-color: #66bb6a;
+}
+
+/* Progresos específicos por habilidad */
+.barra[data-width="1"]::before {
+    width: 90%;
+}
+
+.barra[data-width="2"]::before {
+    width: 80%;
+}
+
+.barra[data-width="3"]::before {
+    width: 70%;
+}
+
+.barra[data-width="4"]::before {
+    width: 60%;
+}
+.barra[data-width="5"]::before {
+    width: 80%;
+}
+.barra[data-width="6"]::before {
+    width: 50%;
+}
+
+/*Testimonios*/
+#testimonios {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#testimonios h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.testimonio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: translateY(0);
+    
+}
+
+
+
+.testimonio-logo img {
+    width: 10em; /* Ajusta según el tamaño de los logos */
+    height: 10em;
+    border-radius: 30%;     
+    margin-bottom: 15px;
+}
+
+.testimonio-contenido {
+    max-width: 600px;
+    font-style: italic;
+    color: #555;
+    font-size: 1.2em;
+}
+
+.testimonio p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.testimonio strong {
+    font-size: 1.2em;
+    color: #333;
+}
+/*habilidades/////////////////////////*/
+
+#habilidades {
+    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#habilidades h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+
+}
+
+.habilidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+.habilidad i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+.habilidad p {
+    flex-grow: 1;
+    margin: 0;
+    font-weight: bold;
+    color: #e0e0e0;
+
+}
+
+.barra {
+    width: 100%;
+    height: 1em;
+    background-color: #e0e0e0;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.barra::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.barra[data-width]::after {
+    width: calc(var(--target-width) * 1%);
+}
+
+.barra[data-width="80"]::after {
+    width: 80%;
+}
+
+.barra[data-width="70"]::after {
+    width: 70%;
+}
+
+.barra[data-width="60"]::after {
+    width: 60%;
+}
+
+.barra[data-width="50"]::after {
+    width: 50%;
+}
+
+.barra[data-width="40"]::after {
+    width: 40%;
+}
+
+.barra[data-width="55"]::after {
+    width: 55%;
+}
+
+
+
+/*Contacto ////////////////////////////////////////////*/
+/* Sección de Contacto */
+#contacto {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    text-align: left;
+}
+
+#contacto h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Estilos del formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #333;
+    animation: fadeInUp 1s ease-out;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+    outline: none;
+}
+
+/* Botón de envío */
+form button {
+    display: inline-block;
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #6a11cb;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    background: #2575fc;
+    transform: translateY(0);
+}
+
+
+
+/* Animaciones */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    ul.menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    ul.menu.show {
+        display: flex;
+    }
+
+    ul.menu li {
+        margin: 10px 0;
+    }
+
+    .hamburguesa {
+        display: flex;
+    }
+
+    #sobre-mi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sobre-mi img {
+        margin-bottom: 1rem;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .habilidad {
+        width: 90%;
+    }
+
+    #habilidades h2 {
+        font-size: 1.5em;
+    }
+
+    .habilidad p {
+        font-size: 1em;
+    }
+
+    .barra {
+        height: 20px;
+    }
+    #contacto h2 {
+        font-size: 2em;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    form button {
+        width: 100%;
+    }
+};
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    #hero a {
+        padding: 0.5rem 1.5rem;
+    }
+
+    #mi-trabajo h2,
+    #servicios h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+}

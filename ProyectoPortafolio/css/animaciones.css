@@ -1,0 +1,11 @@
+/* Estilos para animaciones */
+.animado {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animado.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

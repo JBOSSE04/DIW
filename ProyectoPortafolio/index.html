@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Jose Juan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/trabajo.css">
+    <link rel="stylesheet" href="css/sobre-mi.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/testimonio.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <link rel="stylesheet" href="css/mediaq.css">
+
+
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="https://kit.fontawesome.com/733c7726c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Jose Juan</div>
+            <div class="hamburguesa" id="hamburguesa">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#mi-trabajo">Mi Trabajo</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="images/FPerfil.jpg" alt="Jose Juan" class="perfil">
+            <h1>Jose Juan</h1>
+            <p>Desarrollador Web - Frontend y Backend</p>
+            <a href="https://github.com/JBOSSE04" target="_blank">Visita mi GitHub</a>
+        </div>
+    </section>
+
+    <section id="mi-trabajo">
+        <h2>Mi Trabajo</h2>
+        <div class="galeria">
+            <img src="images/Pong.png" alt="PONG" >
+            <img src="images/hangman.png" alt="Hangman">
+            <img src="images/crono.png" alt="Crono">
+            <img src="images/SNotes.png" alt="StickyNotes">
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <div class="sobre-mi-contenedor">
+            <div class="sobre-mi-caja">
+                <img src="images/proyecto.png" alt="Jose Juan">
+                <h3>Sobre Mí</h3>
+                <p>Desarrollador apasionado por el diseño Frontend y soluciones Backend robustas. Me encanta aprender nuevas tecnologías y crear interfaces accesibles y atractivas.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Desarrollo Frontend</h3>
+            <p>Creación de interfaces atractivas y responsivas.</p>
+        
+        </div>
+        <div class="card">
+            <i class="fas fa-database"></i>
+            <h3>Desarrollo Backend</h3>
+            <p>Implementación de servidores y bases de datos seguras.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Diseño Web</h3>
+            <p>Soluciones de diseño enfocadas en experiencia de usuario.</p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidad">
+            <i class="fa-brands fa-html5"></i>
+                <div class="barra" data-width="1"></div>
+        </div>
+        <div class="habilidad">
+            <i class="fa-brands fa-css"></i>
+            <div class="barra" data-width="2"></div>
+        </div>
+        <div class="habilidad">
+            <i class="fa-brands fa-node-js"></i>
+            <div class="barra" data-width="3"></div>
+        </div>
+        <div class="habilidad">
+            <i class="fa-brands fa-php"></i>
+            
+            <div class="barra" data-width="4"></div>
+        </div>
+        <div class="habilidad">
+            <i class="fa-solid fa-database"></i>
+            
+            <p>SQL</p>
+            <div class="barra" data-width="5"></div>
+        </div>
+        <div class="habilidad">
+            <i class="fa-brands fa-java"></i>
+            <div class="barra" data-width="6"></div>
+        </div>
+    </section>
+
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonio">
+            <div class="testimonio-logo">
+                <img src="images/descarga.jpeg" alt="Empresa 1">
+            </div>
+            <div class="testimonio-contenido">
+                <p>"Jose Juan ha demostrado ser un gran profesional en el desarrollo de nuestras aplicaciones web. Su habilidad para crear interfaces de usuario intuitivas y su experiencia con el backend ha sido clave para el éxito de nuestros proyectos."</p>
+                <p><strong>RandomConsulting</strong></p>
+            </div>
+        </div>
+        <div class="testimonio">
+            <div class="testimonio-logo">
+                <img src="images/testimonio.png" alt="Empresa 2">
+            </div>
+            <div class="testimonio-contenido">
+                <p>"Gracias a su trabajo en equipo y dedicación, pudimos lanzar nuestro portal web antes de la fecha prevista. La atención al detalle y la eficiencia de Jose Juan son excepcionales. Totalmente recomendable."</p>
+                <p><strong>Coding</strong></p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <h2>Redes Sociales</h2>
+        <a href="https://linkedin.com/in/josejuancalvomartin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/jjcm" target="_blank"><i class="fab fa-instagram"></i></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

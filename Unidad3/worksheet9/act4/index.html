@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Hamburguesa</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <div class="line line1"></div>
+    <div class="line line2"></div>
+    <div class="line line3"></div>
+  </div>
+
+  <div class="menu" id="menu">
+    <a >Home</a>
+    <a >About</a>
+    <a >Projects</a>
+    <a >Services</a>
+    <a >Hire Me</a>
+    <a >Contact</a>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      const hamburger = document.querySelector('.hamburger');
+      menu.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

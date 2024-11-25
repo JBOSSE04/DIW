@@ -1,0 +1,129 @@
+.offset { overflow: hidden; margin: 20px 0 40px 20px; }
+        
+.offset div {
+    background-color: #eee;
+    float:left;
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 65px;
+    width:160px;
+    text-align: center;
+}
+
+.examplelabelboxshadow {
+    color: #888;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+.exampleboxshadowa {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: -5px 0px 10px #aaa;
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowb {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 0px 10px #aaa; 
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowc {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 0px 5px #666;
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowd {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: -5px 0px 15px #666;
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowe {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowf {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 0px 5px #aaa; 
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowg {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 0px 5px #aaa;
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowh {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #888;
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowi {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 0px 10px #666;
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowj {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: -5px 0px 10px #666;
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowk {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 10px;
+    text-align: center;
+  }
+  .exampleboxshadowl {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 0px 10px #aaa; 
+    padding: 10px;
+    text-align: center;
+  }
+
+  
+             
