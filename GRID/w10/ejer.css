@@ -1,0 +1,86 @@
+/* /////////////////////////////iphone */
+@media (max-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto auto; /* Header, Hero, Content, Related Posts, Footer */
+    }
+  
+    header {
+      grid-row: 1;
+      background-color: lightblue;
+    }
+  
+    .hero {
+      grid-row: 2;
+      background-color: lavender;
+    }
+  
+    .content {
+      grid-row: 3;
+      background-color: gold;
+    }
+  
+    .related-posts {
+      grid-row: 4;
+      background-color: pink;
+      text-align: center;
+    }
+  
+    footer {
+      grid-row: 5;
+      background-color: orange;
+    }
+  
+    .extra-content {
+      grid-row: 6;
+      background-color: gray;
+    }
+  }
+
+/* 
+  /////////////////ordenador//// */
+
+
+  @media (min-width: 769px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr auto auto auto; 
+    }
+  
+    header {
+      grid-row: 1;
+      background-color: lightblue;
+    }
+  
+    .hero {
+      grid-row: 2;
+      background-color: lavender;
+    }
+  
+    .content {
+      grid-row: 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      background-color: gold;
+    }
+  
+    .related-posts {
+      grid-row: 4;
+      grid-column: 1 / span 2;
+      background-color: pink;
+      text-align: center;
+    }
+  
+    footer {
+      grid-row: 5;
+      grid-column: 1 / span 2;
+      background-color: orange;
+    }
+  
+    .extra-content {
+        grid-row: 6;
+        background-color: gray;
+      }
+    }  

@@ -1,0 +1,171 @@
+@import url('variables.css');
+@import url('reset.css');
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    display: grid;
+}
+
+.header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: rgba(92, 92, 92, 0.9);
+    color: white;
+    width: 10rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: var(--color-secondary);
+}
+
+.main-content 
+{
+    margin-left: 0; 
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, rgba(52, 152, 219, 0.8), rgba(46, 204, 113, 0.8));
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.hero:hover {
+    transform: scale(1.02);
+}
+
+.categorias {
+    padding: 2rem;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.categoria {
+    background-color: rgba(236, 240, 241, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria img {
+    width: 100%;
+    height: auto;
+}
+
+.categoria p {
+    text-align: center;
+    padding: 1rem;
+}
+
+.categoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem;
+}
+
+.footer-section {
+    padding: 1rem;
+}
+
+.productos {
+    padding: 2rem;
+    background-color: rgba(236, 240, 241, 0.9);
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.producto {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.precio {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    margin: 0.5rem 0;
+}
+
+.btn-agregar {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-agregar:hover {
+    background-color: var(--color-secondary);
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}

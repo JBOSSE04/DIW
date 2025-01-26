@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiJo - tu tienda</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-logo">NiJo</div>
+            <div class="loader-bar"></div>
+            <div class="loader-text">Cargando...</div>
+        </div>
+        
+    </div>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <h1>NiJo</h1>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#productos" class="nav__link">Productos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#categorias" class="nav__link">Categorías</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <div class="nav__user">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="nav__cart" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart" id="cart">
+        <h2 class="cart__title">Tu Carrito</h2>
+        <div class="cart__items">
+            <!-- Items del carrito serán insertados aquí -->
+        </div>
+        <div class="cart__total">
+            <span>Total:</span>
+            <span id="cart-total">$0.00</span>
+        </div>
+        <button class="cart__checkout">Proceder al pago</button>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Descubre tu estilo</h1>
+                <p class="hero__text">Las últimas tendencias en moda a tu alcance</p>
+            </div>
+        </section>
+
+        <section class="categories" id="categorias">
+            <div class="container">
+                <h2 class="section__title">Categorías Destacadas</h2>
+                <div class="categories__grid" id="categories-grid">
+                    <!-- Categories will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="products hidden" id="products-section">
+            <div class="container">
+                <h2 class="section__title">Productos</h2>
+                <div class="products__grid" id="products-grid">
+                    <!-- Products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail hidden" id="product-detail">
+            <button class="back-button" id="back-button">
+                <i class="fas fa-arrow-left"></i> Volver
+            </button>
+            <div class="product-detail__container">
+                <div class="product-detail__content">
+                    <!-- Product detail will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="scroll-up" id="scroll-up">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

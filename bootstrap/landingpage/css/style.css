@@ -1,0 +1,320 @@
+
+/* Global Styles */
+body {
+    background-color: #435058;
+    color: #F1F2EE;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.logoBLOCKTIVA {
+    width: 7em;
+    height: 7em;
+}
+.nav-link {
+    color: #435058;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #000000;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-color: #DCF763; 
+    border:2em
+
+
+
+}
+
+.auth-links .btn {
+    margin: 0 5px;
+    background-color: #DCF763;
+    color: #435058;
+    border: none;
+    border-radius: 5px;
+    
+}
+.auth-links {
+    transform: scale(1.1);
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+header:hover {
+    background-color: #f8f9fa;
+}
+
+.logo img {
+    max-height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    background-color: #28a745;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28a745;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.auth-links .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.auth-links .btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-outline-Success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-Success:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-Success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-Success:hover {
+    background-color: #218838;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #d4d4d4; 
+    background-color: rgba(82, 82, 82, 0.50);
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; 
+    
+}
+
+
+.hero h1 {
+    font-size: 4rem;
+    color: #DCF763;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    background-color: #DCF763;
+    color: #435058;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* Content Sections */
+section {
+    margin: 50px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #DCF763;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    color: #d4d4d4;
+}
+
+.carousel img {
+    border-radius: 10px;
+    width: 15rem;
+    height: 20rem;
+}
+
+
+
+.pagination{
+    padding-bottom: 100%;
+}
+
+
+.testimonials-section {
+    background-color: #333;
+    color: #d4d4d4;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    color: #DCF763;
+}
+
+.testimonials-section .highlight {
+    color: #1ed760;
+    font-style: italic;
+}
+
+.testimonial-card {
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.verified-badge {
+    font-size: 0.9rem;
+    color: #1ed760;
+    font-weight: bold;
+}
+
+.badge {
+    font-size: 1rem;
+}
+
+.testimonials-section small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 3rem 1rem;
+}
+
+.contact-section h2 {
+    color: #343a40;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.map-container {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+
+.map-container iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+form .form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+form .form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #495057;
+}
+
+form .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+form button {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4d4d4d;
+    color: #929292;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #d4d4d4;
+    text-align: center;
+    padding: 20px 0;
+}
+

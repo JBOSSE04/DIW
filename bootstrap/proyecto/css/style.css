@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Oswald:wght@200..700&family=Permanent+Marker&display=swap');
+/*mis variables*/
+:root{
+    --transparente: #00000055;
+    --fuente-titulos: "Orbitron", serif;
+
+}
+
+
+/*mis estilos*/
+body{
+    font-family: var(--fuente-titulos);
+}
+
+.hero{
+    background-image: url("../img/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+
+    
+}
+.nav-link:hover, .nav-link:focus {
+    color: var(--bs-nav-link-hover-color);
+}
+
+.hero h1{    
+    background-color: var(--transparente);
+    border-radius: 25px;
+   
+}
+
+.btn-primary {
+    background-color: #353535; 
+    color: #fff;
+    padding: 12px 24px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; 
+}
+.btn-primary:hover {
+    background-color: #a3a3a3; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+    transform: translateX(2px);
+}
+
+.btn-primary:active {
+    background-color: #050505;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); 
+    transform: translateX(-2px);
+}
